@@ -4248,6 +4248,18 @@ class CfgWeapons
 			"41st_Armor\data\Helmets\FST_Barc_Helmet_Ghostly.paa",
 		};
 	}; 
+	class FST_Pilot_P1_Helmet_CO_Raz: FST_Pilot_P1_Helmet
+	{
+		author="Claw";
+		scope=2;
+		displayName="[41st] P1 Pilot Helmet [Razz]";
+		hiddenSelectionsTextures[]=
+		{
+			"41st_Armor\data\Helmets\FST_P1_Pilot_Helmet_CO_Razz.paa",
+			"ls_armor_bluefor\helmet\gar\phase1Pilot\data\lifesupport_co.paa",
+			"ls_armor_bluefor\helmet\gar\phase1Pilot\data\visor_co.paa"
+		};
+	};
 	class FST_P2_ARC_Helmet_Tally: JLTS_CloneHelmetP2
 	{
 		author="Daara";
@@ -7184,6 +7196,16 @@ class CfgWeapons
 			"41st_Armor\Data\Helmets\FST_P2_Helmet_Pope.paa",
 		};
 	};
+	class FST_P2_Helmet_Stant: FST_P2_Helmet_Base
+	{
+		author="Claw";
+		scope=2;
+		displayName="[41st] P2 Helmet [Stant]";
+		hiddenSelectionsTextures[]=
+		{
+			"41st_Armor\Data\Helmets\FST_P2_Helmet_Stant.paa",
+		};
+	};
 	//////////////UNIFORMS//////////////
 	class FST_Uniform_Bodyglove: lsd_gar_bodyGlove_uniform
 	{
@@ -9386,7 +9408,29 @@ class CfgWeapons
 		};
 		thermalMode[]={0,1};
 	};
-};	
+	class FST_NVG_Claw: JLTS_CloneNVG
+	{
+		author="Claw";
+		displayName="[41st] NCO Macrobinoculars (Claw)";
+		modelOptics="\MRC\JLTS\Core_mod\nvg_optic_dummy.p3d";
+		model="\MRC\JLTS\characters\CloneArmor\CloneNVG_off.p3d";
+		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"41st_Armor\Data\Equipment\FST_NVG_Claw.paa",
+		};
+		visionMode[]=
+		{
+			"Normal",
+			"NVG"
+		};
+		thermalMode[]={0,1};
+	};
+};
 class CfgVehicles
 {
 	class Man;
